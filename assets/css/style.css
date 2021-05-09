@@ -103,7 +103,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   /* text-transform: uppercase; */
-  margin: 0 0 0 30px;
+  margin: 0 auto;
   height: 100%;
 }
 
@@ -1233,7 +1233,9 @@ a {
 /* Specialities start */
 .speciality {
   padding: 60px 0px;
-  background-color: #191919;
+  background: url("../img/speciality-bg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .speciality .title {
@@ -1249,12 +1251,20 @@ a {
 .speciality .speciality-element {
   background: white;
   border-radius: 10px;
-  padding: 15px 30px;
+  padding: 30px 30px;
   margin: 15px;
 }
 
 .speciality .speciality-element h5 {
   color: #f15c2a;
+}
+
+.speciality .speciality-element p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
 }
 
 /* Specialities end */
