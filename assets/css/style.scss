@@ -81,9 +81,9 @@ a {
   display: flex;
   font-size: 16px;
   align-items: center;
-  /* text-transform: uppercase; */
   margin: 0 auto;
   height: 100%;
+  padding: 0px 15px;
 }
 
 .site-nav > div > ul > li > a:hover {
@@ -1136,10 +1136,21 @@ a {
 
 .speciality {
   padding: 60px 0px;
-  // background-color: #191919;
   background: url("../img/speciality-bg.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
+  position: relative;
+  .speciality-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #00000047;
+  }
+  .speciality-content {
+    position: relative;
+  }
   .title {
     margin-bottom: 50px;
     text-align: center;
@@ -1152,9 +1163,12 @@ a {
     background: white;
     border-radius: 10px;
     padding: 30px 30px;
-    margin: 15px;
+    margin: 40px 30px;
     h5 {
       color: #f15c2a;
+      a {
+        color: inherit;
+      }
     }
     p {
       overflow: hidden;
@@ -1162,6 +1176,22 @@ a {
       display: -webkit-box;
       -webkit-line-clamp: 5;
       -webkit-box-orient: vertical;
+      line-height: 30px;
+    }
+  }
+  .speciality-read-more {
+    margin-top: 35px;
+    display: grid;
+    place-content: center;
+    a {
+      padding: 17px 40px;
+      background: #f2632b;
+      color: white;
+      border-radius: 4px;
+    }
+    a:hover {
+      background: #c94e2c;
+      transition: 0.4s all;
     }
   }
 }
