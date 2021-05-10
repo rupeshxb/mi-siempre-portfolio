@@ -418,6 +418,12 @@ a {
   background: var(--primary--color);
 }
 
+.faqs {
+  .main-title {
+    margin-top: 60px;
+  }
+}
+
 .faqs .accordion-button {
   text-transform: uppercase;
   font-family: "NexaBold";
@@ -1162,8 +1168,7 @@ a {
   .speciality-element {
     background: white;
     border-radius: 10px;
-    padding: 30px 30px;
-    margin: 40px 30px;
+    padding: 15px;
     h5 {
       color: #f15c2a;
       a {
@@ -1174,9 +1179,15 @@ a {
       overflow: hidden;
       text-overflow: ellipsis;
       display: -webkit-box;
-      -webkit-line-clamp: 5;
+      -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       line-height: 30px;
+      margin-bottom: 5px;
+    }
+    .read-more {
+      font-size: 13px;
+      color: red;
+      border-radius: 5px;
     }
   }
   .speciality-read-more {
