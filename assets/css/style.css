@@ -1307,4 +1307,21 @@ a {
 }
 
 /* Specialities end */
+#appointmentModal .appointment-modal-header-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#appointmentModal .appointment-modal-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#appointmentModal .appointment-modal-buttons .form-wrap button {
+  margin-right: 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1197,3 +1197,25 @@ a {
 }
 
 /* Specialities end */
+
+// Appointment modal //
+
+#appointmentModal {
+  .appointment-modal-header-title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .appointment-modal-buttons {
+    display: flex;
+    .form-wrap {
+      button {
+        margin-right: 10px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+// Appointment modal //
