@@ -1296,21 +1296,21 @@ a {
   border-radius: 5px;
 }
 
-.speciality .speciality-read-more {
+.speciality .speciality-show-all {
   margin-top: 35px;
   display: -ms-grid;
   display: grid;
   place-content: center;
 }
 
-.speciality .speciality-read-more a {
+.speciality .speciality-show-all a {
   padding: 17px 40px;
   background: #f2632b;
   color: white;
   border-radius: 4px;
 }
 
-.speciality .speciality-read-more a:hover {
+.speciality .speciality-show-all a:hover {
   background: #c94e2c;
   -webkit-transition: 0.4s all;
   transition: 0.4s all;
@@ -1332,6 +1332,12 @@ a {
   margin-right: 10px;
   outline: none;
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
+}
+
+#loginModal .modal-body .login-with-email-wrapper .login-button-wrapper button {
+  outline: none;
+  border: none;
+  border-radius: 3px;
 }
 /*# sourceMappingURL=style.css.map */

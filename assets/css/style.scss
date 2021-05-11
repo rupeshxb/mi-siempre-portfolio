@@ -1190,7 +1190,7 @@ a {
       border-radius: 5px;
     }
   }
-  .speciality-read-more {
+  .speciality-show-all {
     margin-top: 35px;
     display: grid;
     place-content: center;
@@ -1223,10 +1223,32 @@ a {
         margin-right: 10px;
         outline: none;
         border: none;
-        border-radius: 5px;
+        border-radius: 3px;
       }
     }
   }
 }
 
 // Appointment modal //
+
+// Login Modal //
+#loginModal {
+  .modal-body {
+    .login-with-email-wrapper {
+      // form {
+      //   display: flex;
+      //   flex-direction: row;
+      //   justify-content: space-between;
+      // }
+      .login-button-wrapper {
+        button {
+          outline: none;
+          border: none;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+}
+
+// Login Modal //
