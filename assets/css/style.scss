@@ -1261,7 +1261,7 @@ a {
   .modal-body {
     .login-with-email-wrapper {
       border-right: 1px solid #dddddd;
-      padding-top: 40px;
+      padding-top: 50px;
       .remember-password {
         display: flex;
         flex-direction: row;
@@ -1290,6 +1290,7 @@ a {
       }
       form {
         width: 95%;
+        margin: 0px auto;
         .form-wrap {
           display: flex;
           flex-direction: row;
@@ -1297,20 +1298,26 @@ a {
           line-height: 100px;
           max-height: 100px;
           i {
+            width: 50px;
             font-size: 1.5rem;
             display: grid;
             place-content: center;
             color: #f15c2a;
+            border-top: 1px solid #dadada;
+            border-bottom: 1px solid #dadada;
+            border-left: 1px SOLID #dadada;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+            padding: 0px 10px;
           }
           input {
             border: 1px solid #dadada;
-            border-radius: 1px;
+            border-radius: 10px;
             padding: 5px 5px;
             margin-top: 0px;
-            margin-left: 15px;
-            border-left: 0px;
-            border-right: 0px;
-            border-top: none;
+            border-left: none;
+            border-bottom-left-radius: 0px;
+            border-top-left-radius: 0px;
           }
           input:focus {
             box-shadow: none;
@@ -1318,6 +1325,9 @@ a {
           input::placeholder {
             font-size: 14px;
           }
+        }
+        .form-wrap:nth-child(2) {
+          margin-bottom: 0px;
         }
       }
       .login-button-wrapper {
@@ -1343,7 +1353,7 @@ a {
       }
     }
     .sign-in-with-wrapper {
-      margin: 45px 50px 0px 50px;
+      margin: 45px 20px 0px 20px;
       .google-color {
         background: #db4437;
       }

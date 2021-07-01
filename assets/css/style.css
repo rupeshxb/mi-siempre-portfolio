@@ -1368,7 +1368,7 @@ a {
 
 #loginModal .modal-body .login-with-email-wrapper {
   border-right: 1px solid #dddddd;
-  padding-top: 40px;
+  padding-top: 50px;
 }
 
 #loginModal .modal-body .login-with-email-wrapper .remember-password {
@@ -1408,6 +1408,7 @@ a {
 
 #loginModal .modal-body .login-with-email-wrapper form {
   width: 95%;
+  margin: 0px auto;
 }
 
 #loginModal .modal-body .login-with-email-wrapper form .form-wrap {
@@ -1426,22 +1427,28 @@ a {
 }
 
 #loginModal .modal-body .login-with-email-wrapper form .form-wrap i {
+  width: 50px;
   font-size: 1.5rem;
   display: -ms-grid;
   display: grid;
   place-content: center;
   color: #f15c2a;
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+  border-left: 1px SOLID #dadada;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 0px 10px;
 }
 
 #loginModal .modal-body .login-with-email-wrapper form .form-wrap input {
   border: 1px solid #dadada;
-  border-radius: 1px;
+  border-radius: 10px;
   padding: 5px 5px;
   margin-top: 0px;
-  margin-left: 15px;
-  border-left: 0px;
-  border-right: 0px;
-  border-top: none;
+  border-left: none;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
 }
 
 #loginModal .modal-body .login-with-email-wrapper form .form-wrap input:focus {
@@ -1463,6 +1470,10 @@ a {
 
 #loginModal .modal-body .login-with-email-wrapper form .form-wrap input::placeholder {
   font-size: 14px;
+}
+
+#loginModal .modal-body .login-with-email-wrapper form .form-wrap:nth-child(2) {
+  margin-bottom: 0px;
 }
 
 #loginModal .modal-body .login-with-email-wrapper .login-button-wrapper {
@@ -1490,7 +1501,7 @@ a {
 }
 
 #loginModal .modal-body .sign-in-with-wrapper {
-  margin: 45px 50px 0px 50px;
+  margin: 45px 20px 0px 20px;
 }
 
 #loginModal .modal-body .sign-in-with-wrapper .google-color {
