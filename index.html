@@ -114,15 +114,24 @@
               </div>
               <div class="col-lg-12">
                 <div class="appointment-modal-buttons">
-                  <div class="form-wrap">
-                    <button type="submit" class="btns btn-primary">
-                      Submit
-                    </button>
+                  <div class="submit-wrapper">
+                    <div class="form-wrap">
+                      <button type="submit" class="btns btn-primary">
+                        Submit
+                      </button>
+                    </div>
+
+                    <div class="form-wrap">
+                      <button type="submit" class="btns btn-primary">
+                        Confirm Now
+                      </button>
+                    </div>
                   </div>
-                  <div class="form-wrap">
-                    <button type="submit" class="btns btn-primary">
-                      Confirm Now
-                    </button>
+
+                  <div class="tickets-wrapper">
+                    <div class="form-wrap">
+                      <button type="submit" class="btns">Get tickets</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -152,37 +161,67 @@
           </div>
           <div class="modal-body register-body">
             <div class="row">
-              <div class="col-lg-12 login-with-email-wrapper">
+              <div class="col-lg-6 login-with-email-wrapper">
                 <form>
-                  <div class="row">
-                    <div class="col-lg-6 form-wrap">
-                      <label for="email" class="form-label"
-                        >Email address</label
-                      >
-                      <input
-                        id="email"
-                        class="form-control"
-                        type="email"
-                        name=""
-                      />
-                    </div>
-
-                    <div class="col-lg-6 form-wrap">
-                      <label for="password" class="form-label">Password</label>
-                      <input
-                        id="password"
-                        class="form-control"
-                        type="passwprd"
-                        name=""
-                      />
-                    </div>
+                  <div class="form-wrap">
+                    <i class="fas fa-envelope-open-text"></i>
+                    <input
+                      id="email"
+                      class="form-control"
+                      type="email"
+                      name=""
+                      placeholder="Enter your email"
+                    />
+                  </div>
+                  <div class="form-wrap">
+                    <i class="fas fa-unlock-alt"></i>
+                    <input
+                      id="password"
+                      class="form-control"
+                      type="passwprd"
+                      name=""
+                      placeholder="Enter your password"
+                    />
                   </div>
                 </form>
+
+                <div class="remember-password">
+                  <input type="checkbox" value="lsRememberMe" id="rememberMe" />
+                  <label>Remember Me</label>
+                </div>
                 <div class="form-wrap login-button-wrapper">
-                  <button type="submit" class="btns btn-primary">Login</button>
+                  <button type="submit" class="btns btn-primary">
+                    SIGN IN
+                  </button>
+                  <a href="#">Forgot my password</a>
                 </div>
               </div>
-              <div class="col-lg-12">hello</div>
+              <div class="col-lg-6">
+                <div class="sign-in-with-wrapper">
+                  <a href="#">
+                    <div class="sign-in-with facebook-color">
+                      <div class="sign-in-with-inner">
+                        <i class="fab fa-facebook-f"></i>Sign In with facebook
+                      </div>
+                    </div></a
+                  >
+                  <a href="#">
+                    <div class="sign-in-with google-color">
+                      <div class="sign-in-with-inner">
+                        <i class="fab fa-google"></i>Sign In with google
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#">
+                    <div class="sign-in-with twitter-color">
+                      <div class="sign-in-with-inner">
+                        <i class="fab fa-twitter"></i>Sign In with twitter
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -574,7 +613,7 @@
                 is upper abdominal pain. Other possible symptoms include nausea
                 and vomiting, bloating, loss of appetite and heartburn.
               </p>
-              <a class="read-more" href="#">Read more</a>
+              <a class="read-more" href="#">Read more <span>></span></a>
             </div>
           </div>
           <div class="col-lg-3">
@@ -590,7 +629,7 @@
                 your cells to be used for energy.
               </p>
 
-              <a class="read-more" href="#">Read more</a>
+              <a class="read-more" href="#">Read more <span>></span></a>
             </div>
           </div>
           <div class="col-lg-3">
@@ -605,7 +644,7 @@
                 walking.
               </p>
 
-              <a class="read-more" href="#">Read more</a>
+              <a class="read-more" href="#">Read more <span>></span></a>
             </div>
           </div>
           <div class="col-lg-3">
@@ -618,7 +657,7 @@
                 an infection.
               </p>
 
-              <a class="read-more" href="#">Read more</a>
+              <a class="read-more" href="#">Read more <span>></span></a>
             </div>
           </div>
           <!-- <div class="col-lg-4">

@@ -1296,6 +1296,16 @@ a {
   border-radius: 5px;
 }
 
+.speciality .speciality-element .read-more span {
+  font-weight: 600;
+}
+
+.speciality .speciality-element .read-more:hover span {
+  padding-left: 10px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
 .speciality .speciality-show-all {
   margin-top: 35px;
   display: -ms-grid;
@@ -1326,6 +1336,23 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#appointmentModal .appointment-modal-buttons .submit-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#appointmentModal .appointment-modal-buttons .tickets-wrapper .btns {
+  background-color: #00c478;
 }
 
 #appointmentModal .appointment-modal-buttons .form-wrap button {
@@ -1335,9 +1362,175 @@ a {
   border-radius: 3px;
 }
 
+#appointmentModal .form-wrap:nth-child() button {
+  background: blue;
+}
+
+#loginModal .modal-body .login-with-email-wrapper {
+  border-right: 1px solid #dddddd;
+  padding-top: 40px;
+}
+
+#loginModal .modal-body .login-with-email-wrapper .remember-password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  line-height: 50px;
+}
+
+#loginModal .modal-body .login-with-email-wrapper .remember-password input {
+  height: 50px;
+  line-height: 50px;
+  margin-right: 10px;
+}
+
 #loginModal .modal-body .login-with-email-wrapper .login-button-wrapper button {
   outline: none;
   border: none;
   border-radius: 3px;
+  padding: 13px 45px;
+}
+
+#loginModal .modal-body .login-with-email-wrapper .login-button-wrapper a {
+  display: block;
+  margin-top: 10px;
+  font-size: 10px;
+  color: #0006cc;
+}
+
+#loginModal .modal-body .login-with-email-wrapper form {
+  width: 95%;
+}
+
+#loginModal .modal-body .login-with-email-wrapper form .form-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 100px;
+  max-height: 100px;
+}
+
+#loginModal .modal-body .login-with-email-wrapper form .form-wrap i {
+  font-size: 1.5rem;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  color: #f15c2a;
+}
+
+#loginModal .modal-body .login-with-email-wrapper form .form-wrap input {
+  border: 1px solid #dadada;
+  border-radius: 1px;
+  padding: 5px 5px;
+  margin-top: 0px;
+  margin-left: 15px;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: none;
+}
+
+#loginModal .modal-body .login-with-email-wrapper form .form-wrap input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#loginModal .modal-body .login-with-email-wrapper form .form-wrap input::-webkit-input-placeholder {
+  font-size: 14px;
+}
+
+#loginModal .modal-body .login-with-email-wrapper form .form-wrap input:-ms-input-placeholder {
+  font-size: 14px;
+}
+
+#loginModal .modal-body .login-with-email-wrapper form .form-wrap input::-ms-input-placeholder {
+  font-size: 14px;
+}
+
+#loginModal .modal-body .login-with-email-wrapper form .form-wrap input::placeholder {
+  font-size: 14px;
+}
+
+#loginModal .modal-body .login-with-email-wrapper .login-button-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+#loginModal .modal-body .login-divider {
+  border-top: 1px solid #ababab;
+  text-align: center;
+  position: relative;
+  width: 50%;
+  margin: 0px auto;
+  padding: 15px 0px;
+  margin-top: 30px;
+}
+
+#loginModal .modal-body .login-divider span {
+  padding: 0px 15px;
+  background: white;
+  position: absolute;
+  top: -14px;
+  left: 168px;
+  color: #444;
+}
+
+#loginModal .modal-body .sign-in-with-wrapper {
+  margin: 45px 50px 0px 50px;
+}
+
+#loginModal .modal-body .sign-in-with-wrapper .google-color {
+  background: #db4437;
+}
+
+#loginModal .modal-body .sign-in-with-wrapper .google-color:hover {
+  background: #c23c30;
+}
+
+#loginModal .modal-body .sign-in-with-wrapper .facebook-color {
+  background: #4267b2;
+}
+
+#loginModal .modal-body .sign-in-with-wrapper .facebook-color:hover {
+  background: #26498f;
+}
+
+#loginModal .modal-body .sign-in-with-wrapper .twitter-color {
+  background: #1da1f2;
+}
+
+#loginModal .modal-body .sign-in-with-wrapper .twitter-color:hover {
+  background: #1d8fd5;
+}
+
+#loginModal .modal-body .sign-in-with-wrapper .sign-in-with {
+  border: 0.5px solid transparent;
+  border-radius: 100px;
+  padding: 12px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+#loginModal .modal-body .sign-in-with-wrapper .sign-in-with i {
+  width: 30px;
+  padding-right: 15px;
+}
+
+#loginModal .modal-body .sign-in-with-wrapper .sign-in-with .sign-in-with-inner {
+  padding-left: 15px;
 }
 /*# sourceMappingURL=style.css.map */

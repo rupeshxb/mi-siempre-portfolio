@@ -1188,6 +1188,15 @@ a {
       font-size: 13px;
       color: red;
       border-radius: 5px;
+      span {
+        font-weight: 600;
+      }
+    }
+    .read-more:hover {
+      span {
+        padding-left: 10px;
+        transition: all 0.4s;
+      }
     }
   }
   .speciality-show-all {
@@ -1218,6 +1227,16 @@ a {
   }
   .appointment-modal-buttons {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .submit-wrapper {
+      display: flex;
+    }
+    .tickets-wrapper {
+      .btns {
+        background-color: #00c478;
+      }
+    }
     .form-wrap {
       button {
         margin-right: 10px;
@@ -1227,24 +1246,134 @@ a {
       }
     }
   }
+  .form-wrap:nth-child() {
+    button {
+      background: blue;
+    }
+  }
 }
 
 // Appointment modal //
 
 // Login Modal //
+
 #loginModal {
   .modal-body {
     .login-with-email-wrapper {
-      // form {
-      //   display: flex;
-      //   flex-direction: row;
-      //   justify-content: space-between;
-      // }
+      border-right: 1px solid #dddddd;
+      padding-top: 40px;
+      .remember-password {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 50px;
+        line-height: 50px;
+        input {
+          height: 50px;
+          line-height: 50px;
+          margin-right: 10px;
+        }
+      }
       .login-button-wrapper {
         button {
           outline: none;
           border: none;
           border-radius: 3px;
+          padding: 13px 45px;
+        }
+        a {
+          display: block;
+          margin-top: 10px;
+          font-size: 10px;
+          color: #0006cc;
+        }
+      }
+      form {
+        width: 95%;
+        .form-wrap {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          line-height: 100px;
+          max-height: 100px;
+          i {
+            font-size: 1.5rem;
+            display: grid;
+            place-content: center;
+            color: #f15c2a;
+          }
+          input {
+            border: 1px solid #dadada;
+            border-radius: 1px;
+            padding: 5px 5px;
+            margin-top: 0px;
+            margin-left: 15px;
+            border-left: 0px;
+            border-right: 0px;
+            border-top: none;
+          }
+          input:focus {
+            box-shadow: none;
+          }
+          input::placeholder {
+            font-size: 14px;
+          }
+        }
+      }
+      .login-button-wrapper {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .login-divider {
+      border-top: 1px solid #ababab;
+      text-align: center;
+      position: relative;
+      width: 50%;
+      margin: 0px auto;
+      padding: 15px 0px;
+      margin-top: 30px;
+      span {
+        padding: 0px 15px;
+        background: white;
+        position: absolute;
+        top: -14px;
+        left: 168px;
+        color: #444;
+      }
+    }
+    .sign-in-with-wrapper {
+      margin: 45px 50px 0px 50px;
+      .google-color {
+        background: #db4437;
+      }
+      .google-color:hover {
+        background: #c23c30;
+      }
+      .facebook-color {
+        background: #4267b2;
+      }
+      .facebook-color:hover {
+        background: #26498f;
+      }
+      .twitter-color {
+        background: #1da1f2;
+      }
+      .twitter-color:hover {
+        background: #1d8fd5;
+      }
+      .sign-in-with {
+        border: 0.5px solid transparent;
+        border-radius: 100px;
+        padding: 12px;
+        margin-bottom: 15px;
+        color: white;
+        i {
+          width: 30px;
+          padding-right: 15px;
+        }
+        .sign-in-with-inner {
+          padding-left: 15px;
         }
       }
     }
