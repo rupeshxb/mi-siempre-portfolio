@@ -147,7 +147,7 @@ a {
   z-index: 2;
 }
 
-.bg-img{
+.bg-img-box{
   .my-intro{
     color: white;
     font-size: 30px;
@@ -156,6 +156,15 @@ a {
     font-family: monospace;
     left: 100px;
     font-weight: 700;
+  }
+}
+
+@media (max-width: 768px){
+  .bg-img-box{
+    .my-intro{
+      left: 00px;
+      padding: 0px 20px;
+    }
   }
 }
 
@@ -561,6 +570,12 @@ a {
 
 .footer-links {
   margin-top: 12px;
+}
+
+@media (max-width: 769px){
+  .footer-links {
+    margin-bottom: 40px;
+  }
 }
 
 .footer-links ul {

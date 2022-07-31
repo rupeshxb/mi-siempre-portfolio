@@ -7,7 +7,7 @@
     $(".black-layer").fadeIn(400);
   });
 
-  $(".black-layer,  .showSide-menu .hamburger ").on("click", function () {
+  $(".showSide-menu .hamburger ").on("click", function () {
     $("body").removeClass("showSide-menu");
     $(this).fadeOut(400);
   });
