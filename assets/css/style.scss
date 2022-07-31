@@ -76,7 +76,7 @@ a {
 }
 
 .site-nav > div > ul > li > a {
-  color: #000;
+  color: white;
   text-decoration: none;
   display: flex;
   font-size: 16px;
@@ -91,7 +91,7 @@ a {
 }
 
 .cta-buttons a {
-  color: #000;
+  color: white;
   font-weight: 500;
   text-transform: uppercase;
   margin-left: 13px;
@@ -121,11 +121,12 @@ a {
 }
 
 .hero-banner #header .logo {
-  width: 170px;
-}
-
-.hero-banner #header .logo img {
-  width: 100%;
+  width: 60px;
+  background: #000;
+  img {
+    width: 100%;
+    border-radius: 100%;
+  }
 }
 
 .hero-banner .bg-img {
@@ -146,13 +147,17 @@ a {
   z-index: 2;
 }
 
-/* .banner-content {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 30%;
-  background: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgb(0, 0, 0));
-} */
+.bg-img{
+  .my-intro{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 40%;
+    font-family: monospace;
+    left: 100px;
+    font-weight: 700;
+  }
+}
 
 .banner-content {
   position: absolute;
@@ -180,19 +185,6 @@ a {
   width: 80%;
 }
 
-.slick-next:before,
-.slick-prev:before {
-  font-size: 30px !important;
-}
-
-.slick-prev {
-  left: -40px !important;
-}
-
-.slick-next {
-  right: -30px;
-}
-
 .text-wrap p {
   font-size: 15px;
   color: #333333db;
@@ -200,7 +192,7 @@ a {
 
 .choices .img-wrap a {
   display: block;
-  height: 190px;
+  height: 345px;
   overflow: hidden;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 400ms transform;
 }
@@ -559,6 +551,8 @@ a {
 
 .site-footer {
   padding: 50px 0;
+  background: black;
+    color: white;
 }
 
 .footer-logo {
@@ -587,7 +581,7 @@ a {
 }
 
 .company-contact-info li {
-  color: #333;
+  color: white;
   padding-bottom: 8px;
   position: relative;
   font-size: 15px;
@@ -610,8 +604,8 @@ a {
 }
 
 .site-footer .copyrights a {
-  color: #333;
-  border: 2px solid #333;
+  color: white;
+  border: 2px solid #F15918;
   height: 40px;
   line-height: 40px;
   width: 40px;
@@ -1138,256 +1132,5 @@ a {
 @media (min-width: 1500px) {
 }
 
-/* Specialities start */
 
-.speciality {
-  padding: 60px 0px;
-  background: url("../img/speciality-bg.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  position: relative;
-  .speciality-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #00000047;
-  }
-  .speciality-content {
-    position: relative;
-  }
-  .title {
-    margin-bottom: 50px;
-    text-align: center;
-    color: white;
-    h3 {
-      text-transform: uppercase;
-    }
-  }
-  .speciality-element {
-    background: white;
-    border-radius: 10px;
-    padding: 15px;
-    h5 {
-      color: #f15c2a;
-      a {
-        color: inherit;
-      }
-    }
-    p {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      line-height: 30px;
-      margin-bottom: 5px;
-    }
-    .read-more {
-      font-size: 13px;
-      color: red;
-      border-radius: 5px;
-      span {
-        font-weight: 600;
-      }
-    }
-    .read-more:hover {
-      span {
-        padding-left: 10px;
-        transition: all 0.4s;
-      }
-    }
-  }
-  .speciality-show-all {
-    margin-top: 35px;
-    display: grid;
-    place-content: center;
-    a {
-      padding: 17px 40px;
-      background: #f2632b;
-      color: white;
-      border-radius: 4px;
-    }
-    a:hover {
-      background: #c94e2c;
-      transition: 0.4s all;
-    }
-  }
-}
 
-/* Specialities end */
-
-// Appointment modal //
-
-#appointmentModal {
-  .appointment-modal-header-title {
-    font-size: 20px;
-    font-weight: 600;
-  }
-  .appointment-modal-buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    .submit-wrapper {
-      display: flex;
-    }
-    .tickets-wrapper {
-      .btns {
-        background-color: #00c478;
-      }
-    }
-    .form-wrap {
-      button {
-        margin-right: 10px;
-        outline: none;
-        border: none;
-        border-radius: 3px;
-      }
-    }
-  }
-  .form-wrap:nth-child() {
-    button {
-      background: blue;
-    }
-  }
-}
-
-// Appointment modal //
-
-// Login Modal //
-
-#loginModal {
-  .modal-body {
-    .login-with-email-wrapper {
-      border-right: 1px solid #dddddd;
-      padding-top: 50px;
-      .remember-password {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        height: 50px;
-        line-height: 50px;
-        input {
-          height: 50px;
-          line-height: 50px;
-          margin-right: 10px;
-        }
-      }
-      .login-button-wrapper {
-        button {
-          outline: none;
-          border: none;
-          border-radius: 3px;
-          padding: 13px 45px;
-        }
-        a {
-          display: block;
-          margin-top: 10px;
-          font-size: 10px;
-          color: #0006cc;
-        }
-      }
-      form {
-        width: 95%;
-        margin: 0px auto;
-        .form-wrap {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          line-height: 100px;
-          max-height: 100px;
-          i {
-            width: 50px;
-            font-size: 1.5rem;
-            display: grid;
-            place-content: center;
-            color: #f15c2a;
-            border-top: 1px solid #dadada;
-            border-bottom: 1px solid #dadada;
-            border-left: 1px SOLID #dadada;
-            border-bottom-left-radius: 10px;
-            border-top-left-radius: 10px;
-            padding: 0px 10px;
-          }
-          input {
-            border: 1px solid #dadada;
-            border-radius: 10px;
-            padding: 5px 5px;
-            margin-top: 0px;
-            border-left: none;
-            border-bottom-left-radius: 0px;
-            border-top-left-radius: 0px;
-          }
-          input:focus {
-            box-shadow: none;
-          }
-          input::placeholder {
-            font-size: 14px;
-          }
-        }
-        .form-wrap:nth-child(2) {
-          margin-bottom: 0px;
-        }
-      }
-      .login-button-wrapper {
-        width: 100%;
-        text-align: center;
-      }
-    }
-    .login-divider {
-      border-top: 1px solid #ababab;
-      text-align: center;
-      position: relative;
-      width: 50%;
-      margin: 0px auto;
-      padding: 15px 0px;
-      margin-top: 30px;
-      span {
-        padding: 0px 15px;
-        background: white;
-        position: absolute;
-        top: -14px;
-        left: 168px;
-        color: #444;
-      }
-    }
-    .sign-in-with-wrapper {
-      margin: 45px 20px 0px 20px;
-      .google-color {
-        background: #db4437;
-      }
-      .google-color:hover {
-        background: #c23c30;
-      }
-      .facebook-color {
-        background: #4267b2;
-      }
-      .facebook-color:hover {
-        background: #26498f;
-      }
-      .twitter-color {
-        background: #1da1f2;
-      }
-      .twitter-color:hover {
-        background: #1d8fd5;
-      }
-      .sign-in-with {
-        border: 0.5px solid transparent;
-        border-radius: 100px;
-        padding: 12px;
-        margin-bottom: 15px;
-        color: white;
-        i {
-          width: 30px;
-          padding-right: 15px;
-        }
-        .sign-in-with-inner {
-          padding-left: 15px;
-        }
-      }
-    }
-  }
-}
-
-// Login Modal //

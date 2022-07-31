@@ -12,24 +12,6 @@
     $(this).fadeOut(400);
   });
 
-  $(".reviews  .owl-carousel").owlCarousel({
-    loop: true,
-    margin: 20,
-    nav: false,
-    dots: true,
-    autoplay: true,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 2,
-      },
-      768: {
-        items: 3,
-      },
-    },
-  });
   $("#btn--chat-call").click(function () {
     $(".mesgs").toggle();
   });
@@ -54,27 +36,26 @@ function scrollNavbar() {
     document.getElementById("get-appoint-btn").style.borderRadius = "0px";
     document.getElementById("get-appoint-btn").style.transition = "400ms";
     document.getElementById("navbar-logo").style.width = "150px";
+    var listOfAnchorOnNavbar = document.querySelectorAll(".site-nav > div > ul > li > a");
+    for (var i=0; i<listOfAnchorOnNavbar.length;i++){
+      listOfAnchorOnNavbar[i].style.color = "black";
+    }
     var allLists = document.querySelectorAll(".site-nav > div > ul > li");
     for (var i = 0; i < allLists.length; i++) {
       allLists[i].style.height = "50px";
     }
-  } else {
+  }
+  else {
     document.getElementById("navbar-logo").style.width = "175px";
     document.getElementById("header").style.padding = "15px 0px";
     document.getElementById("header").style.backgroundColor = "transparent";
     document.getElementById("get-appoint-btn").style = "none";
+    var listOfAnchorOnNavbar = document.querySelectorAll(".site-nav > div > ul > li > a");
+    for (var i=0; i<listOfAnchorOnNavbar.length;i++){
+      listOfAnchorOnNavbar[i].style.color = "white";
+    }
   }
 }
 
 // ------- Dynamic, shrinking navbar ----------------- //
 
-// ------- slick slider jquery ------- //
-
-$(".banner-slick").slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: true,
-  infinite: true,
-});
-
-// ------- slick slider jquery ------- //
