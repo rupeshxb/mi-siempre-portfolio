@@ -154,8 +154,10 @@ a {
     position: absolute;
     top: 40%;
     font-family: monospace;
-    left: 100px;
     font-weight: 700;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -199,11 +201,16 @@ a {
   color: #333333db;
 }
 
-.choices .img-wrap a {
+
+.choices .img-wrap{
+  border: 3px #0b0b0b solid;
+  border-radius: 3px;
+  a{
   display: block;
   height: 345px;
   overflow: hidden;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 400ms transform;
+  }
 }
 
 .choices .img-wrap a img {

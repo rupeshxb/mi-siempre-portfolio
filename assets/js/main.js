@@ -36,6 +36,7 @@ function scrollNavbar() {
     document.getElementById("get-appoint-btn").style.borderRadius = "0px";
     document.getElementById("get-appoint-btn").style.transition = "400ms";
     document.getElementById("navbar-logo").style.width = "150px";
+    document.querySelector(".hero-banner #header .logo").style.borderRadius = "100%";
     var listOfAnchorOnNavbar = document.querySelectorAll(".site-nav > div > ul > li > a");
     for (var i=0; i<listOfAnchorOnNavbar.length;i++){
       listOfAnchorOnNavbar[i].style.color = "black";
