@@ -98,19 +98,23 @@ a {
 }
 
 .cta-buttons a.btns:hover {
-  background: var(--primary--color);
-  color: #fff;
+  border: 2px solid rgb(255, 255, 255);
+  transition-delay: 30ms;
+  background: none;
+  color: #3ffd5a;
+  opacity: 1;
 }
 
 .cta-buttons a.btns {
-  background: #fcd8cc;
-  color: var(--primary--color);
+  background: none;
+  color: #3ffd5a;
   padding: 10px 30px;
-  border-radius: 25px;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border: 2PX solid #92959e;
 }
 
 .hero-banner {
