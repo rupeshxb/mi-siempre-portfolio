@@ -67,11 +67,12 @@ function scrollNavbar() {
  */
 // disable right click
 document.oncontextmenu = function (e) {
-  e.preventDefault()
+  e.preventDefault();
   return false;
 }
 // disable somme additional key
 document.onkeydown = function (e) {
+  e.preventDefault()
   // disable f12
   if (e.keycode == 123) {
       return false;
