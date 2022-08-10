@@ -10,7 +10,6 @@ document.oncontextmenu = function (e) {
 }
 // disable somme additional key
 document.onkeydown = function (e) {
-  e.preventDefault()
   // disable f12
   if (e.keycode == 123) {
       return false;
