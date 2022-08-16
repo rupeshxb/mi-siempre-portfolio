@@ -3,27 +3,30 @@
  */
 
 // disable right click
-document.oncontextmenu = function (e) {
-  e.preventDefault();
+document.oncontextmenu = function(event) {
+  event.preventDefault();
   alert("Action Denied");
   return false;
 }
 
-// disable somme additional key
+// disable some additional key
 document.onkeydown = function (e) {
   // disable f12
-  if (e.keycode == 123) {
+  if (e.key == 123) {
     e.preventDefault();
     alert("Action not allowed")
       return false;
   }
 
   // disable ctrl+shift+I
-  if (e.ctrlKey && e.shiftKey && (e.key=='I' || e.key=='i')){
+  if (e.ctrlKey && e.shiftKey && e.key=='I' || e.key=='i'){
       e.preventDefault();
       alert("Denied to inspect.");
+      console.log('hello');
       return false;
+      
   }
+
   
   // disable ctrl+shift+C
   if (e.ctrlKey && e.shiftKey && (e.key=='c' || e.key=='C')){
@@ -37,6 +40,7 @@ document.onkeydown = function (e) {
     alert("Action not allowed");
     return false;
 }
+
   // disable ctrl+shift+U
   if (e.ctrlKey && e.shiftKey && (e.key=='u' || e.key=='U')){
     e.preventDefault();
@@ -44,3 +48,4 @@ document.onkeydown = function (e) {
     return false;
   }
 }
+
