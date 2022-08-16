@@ -17,11 +17,7 @@ document.onkeydown = function (e) {
     alert("Action not allowed")
       return false;
   }
-  var countPressZ=0;
-  while(e.key='z'){
-    countPressZ++;
-  }
-  console.log(countPressZ);
+
   // disable ctrl+shift+I
   if (e.ctrlKey && e.shiftKey && (e.key=='I' || e.key=='i')){
       e.preventDefault();
