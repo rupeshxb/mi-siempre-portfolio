@@ -4,11 +4,13 @@
  * this plugin disable all inspect element feature on a web browser
  */
 // disable right click
-document.oncontextmenu = function (e) {
-  e.preventDefault();
-  alert("Action Denied");
-  return false;
-}
+
+// document.oncontextmenu = function (e) {
+//   e.preventDefault();
+//   alert("Action Denied");
+//   return false;
+// }
+
 // disable somme additional key
 document.onkeydown = function (e) {
   // disable f12
@@ -17,8 +19,9 @@ document.onkeydown = function (e) {
       return false;
   }
   // disable ctrl+shift+I
-  if (e.ctrlKey && e.shiftKey && e.keycode == 'i'.charCodeAt(0)){
-    alert("Hey you! Stop what you\'re doing");
+  // && e.keycode == 'i'.charCodeAt(0)
+  if (e.ctrlKey && e.shiftKey){
+    console.log("Hey you! Stop what you\'re doing");
     return false;
   }
   // disable ctrl+shift+C
