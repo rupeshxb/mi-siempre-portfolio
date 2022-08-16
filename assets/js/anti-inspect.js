@@ -21,10 +21,7 @@ document.onkeydown = function (e) {
   // disable ctrl+shift+I
   if (e.ctrlKey && e.shiftKey && e.key=='I' || e.key=='i'){
       e.preventDefault();
-      alert("Denied to inspect.");
-      console.log('hello');
       return false;
-      
   }
 
   
