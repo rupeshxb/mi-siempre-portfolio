@@ -28,13 +28,11 @@ document.onkeydown = function (e) {
   // disable ctrl+shift+C
   if (e.ctrlKey && e.shiftKey && (e.key=='c' || e.key=='C')){
     e.preventDefault();
-    alert("Action not allowed");
     return false;
 }
   // disable ctrl+shift+j
   if (e.ctrlKey && e.shiftKey && (e.key=='J' || e.key=='j')){
     e.preventDefault();
-    alert("Action not allowed");
     return false;
 }
 

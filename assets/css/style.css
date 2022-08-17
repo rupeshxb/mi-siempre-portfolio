@@ -140,15 +140,7 @@ a {
   height: 100%;
   overflow: hidden;
   pointer-events: none;
-}
-
-.hero-banner .bg-img img {
-  min-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  min-height: 100%;
-  pointer-events: none;
-  z-index: 2;
+  background-image: url(../img/banner_img.webp);
 }
 
 .bg-img-box .my-intro {
