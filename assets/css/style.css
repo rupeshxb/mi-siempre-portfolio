@@ -141,6 +141,7 @@ a {
   overflow: hidden;
   pointer-events: none;
   background-image: url(../img/banner_img.webp);
+  background-size: cover;
 }
 
 .bg-img-box .my-intro {
@@ -480,7 +481,6 @@ a {
 }
 
 .faqs .accordion-button:focus {
-  border-color: none;
   box-shadow: none;
 }
 

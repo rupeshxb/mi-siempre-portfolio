@@ -28,19 +28,19 @@ window.onscroll = function () {
 };
 
 function scrollNavbar() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("header").style.padding = "0px 0px";
-    document.getElementById("header").style.backgroundColor = "#DBD5C9";
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    document.getElementById("header").style.padding = "6px 0px";
+    document.getElementById("header").style.backgroundColor = "#000000";
     document.getElementById("header").style.transition = "400ms";
     document.getElementById("get-appoint-btn").style.padding = "16px 30px";
     document.getElementById("get-appoint-btn").style.borderRadius = "0px";
     document.getElementById("get-appoint-btn").style.transition = "400ms";
     document.getElementById("navbar-logo").style.width = "150px";
     document.querySelector(".hero-banner #header .logo").style.borderRadius = "100%";
-    var listOfAnchorOnNavbar = document.querySelectorAll(".site-nav > div > ul > li > a");
-    for (var i=0; i<listOfAnchorOnNavbar.length;i++){
-      listOfAnchorOnNavbar[i].style.color = "black";
-    }
+    // var listOfAnchorOnNavbar = document.querySelectorAll(".site-nav > div > ul > li > a");
+    // for (var i=0; i<listOfAnchorOnNavbar.length;i++){
+    //   listOfAnchorOnNavbar[i].style.color = "black";
+    // }
     var allLists = document.querySelectorAll(".site-nav > div > ul > li");
     for (var i = 0; i < allLists.length; i++) {
       allLists[i].style.height = "50px";

@@ -144,15 +144,8 @@ a {
   overflow: hidden;
   pointer-events: none;
   background-image: url(../img/banner_img.webp);
+  background-size: cover;
 }
-
-// .hero-banner .bg-img img {
-//   min-width: 100%;
-//   object-fit: cover;
-//   min-height: 100%;
-//   pointer-events: none;
-//   z-index: 2;
-// }
 
 .bg-img-box{
   .my-intro{
