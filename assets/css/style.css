@@ -157,6 +157,7 @@ a {
 }
 
 /* Type writer effect starts */
+/* My intro class get loaded along with typewriter class from JS */
 .my-intro text {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid orange; /* The typwriter cursor */
@@ -481,6 +482,7 @@ a {
 }
 
 .faqs .accordion-button:focus {
+  border-color: none;
   box-shadow: none;
 }
 

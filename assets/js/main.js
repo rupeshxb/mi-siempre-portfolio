@@ -1,3 +1,6 @@
+
+// ----------- Toggle navbar on clcking hamburger starts --------------- //
+
 (function ($) {
   $(".main-menu > ul > li:has(ul)").addClass("hassub");
   $(".hassub").append('<i class="fas fa-chevron-down"></i>	');
@@ -20,6 +23,8 @@
     $(".mesgs").hide();
   });
 })(jQuery);
+
+// ----------- Toggle navbar on clcking hamburger ends --------------- //
 
 // ------- Dynamic, shrinking navbar ----------------- //
 
@@ -59,6 +64,16 @@ function scrollNavbar() {
 }
 
 // ------- Dynamic, shrinking navbar ----------------- //
+
+/* ------- Load typewriter effect only after page has loaded starts ------------ */
+
+window.onload = function(){
+  var typewriterElement = document.querySelector(".typewriter");
+  typewriterElement.classList.add("my-intro");
+}
+
+/* ------- Load typewriter effect only after page has loaded ends ------------ */
+
 
 
 
